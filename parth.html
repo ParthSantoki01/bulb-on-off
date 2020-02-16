@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parth</title>
+	<script>
+		function myfunctions(sw) {
+			if(sw==0)
+			{
+				alert("bulb is off");
+				document.getElementById('p').src='pic_bulboff.gif';
+			}
+			else{
+				alert("bulb is on");
+				document.getElementById('p').src='pic_bulbon.gif';
+			}
+			
+		}
+		
+	</script>
+	<style type="text/css">
+		img{
+			margin-top: 10%;
+			height: 300px;
+			width: auto;
+		}
+		body{
+			background-color: lightblue;
+			text-align: center;
+		}
+		button:hover{
+			background-color: blue;
+			color: white;
+		}
+		button{
+			min-width: 16%;
+			padding:5px;
+			margin-top: 1%;
+			margin-left: 1%;
+			font-size: 25px;
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body id="bg">
+	<img src="pic_bulboff.gif" id="p"></img><br>
+	<button type="button" onclick="myfunctions(0)">bulb off</button>
+	<button type="button" onclick="myfunctions(1)">bulb on </button>
+</body>
+</html>
